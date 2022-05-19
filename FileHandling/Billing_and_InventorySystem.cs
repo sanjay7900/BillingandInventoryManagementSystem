@@ -11,7 +11,7 @@ namespace FileHandling
     {   
        public void User_Module() 
         {
-            FileStream fst = new FileStream(@"D:\DotnetTraining\DemoRepo\user.txt", FileMode.Create, FileAccess.Write);
+            FileStream fst = new FileStream(@"D:\DotnetTraining\DemoRepo\user.txt", FileMode.Append, FileAccess.Write);
             StreamWriter sw = new StreamWriter(fst);
             Console.Write("Enter the UserId: ");
             sw.Write(Console.ReadLine());
@@ -37,7 +37,7 @@ namespace FileHandling
         }
         public void Category_Module()
         {
-            FileStream fst = new FileStream(@"D:\DotnetTraining\DemoRepo\Category.txt", FileMode.Create, FileAccess.Write);
+            FileStream fst = new FileStream(@"D:\DotnetTraining\DemoRepo\Category.txt", FileMode.Append, FileAccess.Write);
             StreamWriter sw = new StreamWriter(fst);
             Console.Write("Enter the CategoryId: ");
             sw.Write(Console.ReadLine());
@@ -53,7 +53,7 @@ namespace FileHandling
         public void Product_Module()
         {
             
-            FileStream fst = new FileStream(@"D:\DotnetTraining\DemoRepo\Product.txt", FileMode.Create, FileAccess.Write);
+            FileStream fst = new FileStream(@"D:\DotnetTraining\DemoRepo\Product.txt", FileMode.Append, FileAccess.Write);
             StreamWriter sw = new StreamWriter(fst);
             Console.Write("Enter the Productid: ");
             sw.Write(Console.ReadLine());
@@ -82,7 +82,7 @@ namespace FileHandling
         {
             
 
-            FileStream fst = new FileStream(@"D:\DotnetTraining\DemoRepo\PurchaseandSales.txt", FileMode.Create, FileAccess.Write);
+            FileStream fst = new FileStream(@"D:\DotnetTraining\DemoRepo\PurchaseandSales.txt", FileMode.Append, FileAccess.Write);
             StreamWriter sw = new StreamWriter(fst);
             Console.Write("Enter the SalesId: ");
             sw.Write(Console.ReadLine());
